@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Renta Auto La Peñita de Jaltemba</title>
+
+<meta name="description" content="Renta de autos en La Peñita de Jaltemba, Nayarit. Vehículos económicos, automáticos, familiares y pickup. Reservaciones por WhatsApp con CARENT.">
+
+<meta name="keywords" content="renta de autos la peñita, renta auto nayarit, renta de carros la peñita de jaltemba, renta auto guayabitos, renta auto compostela">
+
+<meta property="og:title" content="Renta Auto La Peñita de Jaltemba">
+
+<meta property="og:description" content="Cotiza y reserva por WhatsApp con CARENT.">
+
+<meta property="og:image" content="carent-portada.jpg">
+
+  
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      background:#eef5ff;
+      font-family:Arial,sans-serif;
+      color:#222;
+    }
+
+    /* ========================================= */
+    /* HEADER */
+    /* ========================================= */
+
+    header{
+      background:#ffffff;
+      text-align:center;
+      padding:8px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    header h1{
+      margin:0;
+      font-size:34px;
+      color:#003399;
+    }
+
+    header p{
+      margin-top:6px;
+      color:#555;
+      font-size:16px;
+    }
+
+    /* ========================================= */
+    /* HERO */
+    /* ========================================= */
+
+    .hero-portada{
+      width:100%;
+      background:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:0;
+      margin:0;
+    }
+
+    /* ========================================= */
+    /* REDUCIDA 20% */
+    /* ========================================= */
+
+    .hero-img{
+      width:80%;
+      max-width:1450px;
+      display:block;
+      object-fit:cover;
+    }
+
+    /* ========================================= */
+    /* INTRO */
+    /* ========================================= */
+
+    .intro{
+      max-width:950px;
+      margin:25px auto;
+      background:#ffffff;
+      border-radius:20px;
+      padding:28px;
+      text-align:center;
+      box-shadow:0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .intro h2{
+      color:#003399;
+      font-size:34px;
+      margin-bottom:18px;
+    }
+
+    .intro p{
+      font-size:18px;
+      line-height:1.7;
+      color:#444;
+      max-width:850px;
+      margin:auto;
+    }
+
+    /* ========================================= */
+    /* BOTONES */
+    /* ========================================= */
+
+    .botones{
+      margin-top:30px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:18px;
+    }
+
+    .btn-chat{
+      width:90%;
+      max-width:700px;
+      background:#007bff;
+      color:#fff;
+      border:none;
+      padding:18px;
+      border-radius:18px;
+      font-size:20px;
+      font-weight:bold;
+      cursor:pointer;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
+      transition:0.2s;
+    }
+
+    .btn-chat:hover{
+      transform:scale(1.02);
+    }
+
+    .btn-wa{
+      width:90%;
+      max-width:700px;
+      background:#25D366;
+      color:#fff;
+      text-decoration:none;
+      padding:18px;
+      border-radius:18px;
+      font-size:20px;
+      font-weight:bold;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
+      transition:0.2s;
+      text-align:center;
+    }
+
+    .btn-wa:hover{
+      transform:scale(1.02);
+    }
+
+    /* ========================================= */
+    /* TEXTO EXTRA */
+    /* ========================================= */
+
+    .trust{
+      margin-top:18px;
+      color:#555;
+      font-size:15px;
+    }
+
+    /* ========================================= */
+    /* FLOTILLA */
+    /* ========================================= */
+
+    .flotilla{
+      width:90%;
+      max-width:1200px;
+      margin:50px auto;
+    }
+
+    .flotilla h2{
+      text-align:center;
+      color:#003399;
+      font-size:34px;
+      margin-bottom:30px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:22px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:18px;
+      padding:25px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.12);
+      text-align:center;
+    }
+
+    .card .emoji{
+      font-size:42px;
+      margin-bottom:12px;
+    }
+
+    .card h3{
+      color:#003399;
+      margin-bottom:12px;
+    }
+
+    .card p{
+      color:#444;
+      line-height:1.6;
+    }
+
+    /* ========================================= */
+    /* COMO FUNCIONA */
+    /* ========================================= */
+
+    .funciona{
+      width:90%;
+      max-width:1200px;
+      margin:50px auto;
+      background:#fff;
+      border-radius:20px;
+      padding:40px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .funciona h2{
+      text-align:center;
+      color:#003399;
+      font-size:34px;
+      margin-bottom:35px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      text-align:center;
+    }
+
+    .step{
+      padding:15px;
+    }
+
+    .step .num{
+      font-size:48px;
+      margin-bottom:10px;
+    }
+
+    .step h3{
+      color:#003399;
+      margin-bottom:10px;
+    }
+
+    .step p{
+      color:#555;
+      line-height:1.6;
+    }
+
+    /* ========================================= */
+    /* FOOTER */
+    /* ========================================= */
+
+    footer{
+      margin-top:60px;
+      padding:30px;
+      background:#ffffff;
+      text-align:center;
+      color:#555;
+      font-size:15px;
+    }
+
+    footer a{
+      color:#003399;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    /* ========================================= */
+    /* RESPONSIVE */
+    /* ========================================= */
+
+    @media(max-width:768px){
+
+      .hero-img{
+        width:100%;
+      }
+
+      header h1{
+        font-size:26px;
+      }
+
+      .intro{
+        padding:24px;
+      }
+
+      .intro h2{
+        font-size:28px;
+      }
+
+      .intro p{
+        font-size:17px;
+      }
+
+      .btn-chat,
+      .btn-wa{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ========================================= -->
+  <!-- HEADER -->
+  <!-- ========================================= -->
+
+  <header>
+
+    <h1>
+      Renta Auto La Peñita de Jaltemba
+    </h1>
+<p style="
+margin-top:10px;
+font-size:18px;
+color:#444;
+font-weight:bold;
+">
+🚗 Empresa local de renta de vehículos en La Peñita de Jaltemba, Nayarit.
+</p>
+    <p>
+      Nayarit, México • Reservaciones por WhatsApp
+    </p>
+
+  </header>
+
+  <!-- ========================================= -->
+  <!-- HERO -->
+  <!-- ========================================= -->
+
+  <div class="hero-portada">
+
+    <img
+      src="carent-portada.jpg"
+      alt="Renta Auto La Peñita de Jaltemba"
+      class="hero-img"
+    >
+
+  </div>
+
+  <!-- ========================================= -->
+  <!-- INTRO -->
+  <!-- ========================================= -->
+
+  <div class="intro">
+
+   <h2>
+RENTA AUTO LA PEÑITA DE JALTEMBA
+</h2>
+
+<p style="
+margin-top:10px;
+font-size:20px;
+font-weight:bold;
+color:#003399;
+">
+Atendido por CARENT, nuestro asistente virtual de reservaciones.
+</p>
+
+    <p>
+RENTA AUTO LA PEÑITA DE JALTEMBA es una empresa local dedicada a la renta de vehículos para turistas y residentes en Nayarit.
+
+Nuestro asistente virtual CARENT te ayudará a consultar disponibilidad, conocer nuestra flotilla y solicitar una cotización rápida por WhatsApp.
+</p>
+
+    <div class="botones">
+
+    <button
+  class="btn-chat"
+  onclick="abrirChatBotpress()"
+>
+  💬 Solicitar cotización
+</button>
+
+<p style="
+margin-top:8px;
+font-size:14px;
+color:#666;
+font-style:italic;
+">
+Atendido automáticamente por CARENT.
+</p>
+
+      <a
+        class="btn-wa"
+       href="https://wa.me/523271023282?text=Hola%20Manuel%20👋%0A%0AVengo%20de%20visitar%20la%20página%20de%20RENTA%20AUTO%20LA%20PEÑITA%20DE%20JALTEMBA.%0A%0AFui%20atendido%20por%20CARENT%20y%20quiero%20continuar%20con%20atención%20personalizada%20para%20mi%20renta."
+        target="_blank"
+      >
+        📲 Atención humana inmediata
+      </a>
+
+    </div>
+
+    <p class="trust">
+      ✅ Atención por WhatsApp • Reservaciones reales • Atención personalizada
+    </p>
+
+  </div>
+
+  <!-- ========================================= -->
+  <!-- FLOTILLA -->
+  <!-- ========================================= -->
+
+  <div class="flotilla">
+
+    <h2>Nuestra flotilla</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="emoji">🚗</div>
+        <h3>Vehículos económicos</h3>
+        <p>Tiida • March</p>
+        <p>Excelente rendimiento y precio accesible.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🚘</div>
+        <h3>Automáticos cómodos</h3>
+        <p>Versa • Sentra</p>
+        <p>Más comodidad para carretera.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">👨‍👩‍👧‍👦</div>
+        <h3>Familiares</h3>
+        <p>Avanza 7 pasajeros</p>
+        <p>Ideal para viajes familiares y grupos.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🛻</div>
+        <h3>Pickup y remolque</h3>
+        <p>Tacoma • Remolque</p>
+        <p>Opciones para carga ligera y apoyo.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ========================================= -->
+  <!-- COMO FUNCIONA -->
+  <!-- ========================================= -->
+
+  <div class="funciona">
+
+    <h2>¿Cómo funciona?</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="num">1️⃣</div>
+        <h3>Elige vehículo</h3>
+        <p>Explora nuestra flotilla disponible.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">2️⃣</div>
+        <h3>Consulta disponibilidad</h3>
+        <p>Revisamos fechas y opciones.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">3️⃣</div>
+        <h3>Recibe cotización</h3>
+        <p>Obtén costo aproximado rápidamente.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">4️⃣</div>
+        <h3>Confirma reservación</h3>
+        <p>Continúa fácilmente por WhatsApp.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ========================================= -->
+  <!-- POR QUE ELEGIRNOS -->
+  <!-- ========================================= -->
+
+  <div class="funciona">
+
+    <h2>¿Por qué elegirnos?</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="num">✅</div>
+        <h3>Atención rápida</h3>
+        <p>Respuesta por WhatsApp y atención personalizada.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">🚗</div>
+        <h3>Flotilla variada</h3>
+        <p>Opciones económicas, automáticas y familiares.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">🌴</div>
+        <h3>Servicio local</h3>
+        <p>Atención en La Peñita de Jaltemba, Nayarit.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">📲</div>
+        <h3>Reservación fácil</h3>
+        <p>Cotiza y reserva directamente desde WhatsApp.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+<div class="funciona">
+
+<h2>Información del negocio</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="num">📍</div>
+<h3>Ubicación</h3>
+<h3>Ubicación</h3>
+
+<p>
+Calle 16 de Septiembre #1<br>
+La Peñita de Jaltemba<br>
+Compostela, Nayarit<br>
+C.P. 63720
+</p>
+</div>
+
+<div class="step">
+<div class="num">📲</div>
+<h3>WhatsApp Oficial</h3>
+<p>322 140 0187</p>
+</div>
+
+<div class="step">
+<div class="num">🚗</div>
+<h3>Actividad</h3>
+<p>Renta de vehículos para turistas y residentes.</p>
+</div>
+
+<div class="step">
+<div class="num">🤖</div>
+<h3>Asistente Virtual</h3>
+<p>CARENT, asistente oficial de reservaciones.</p>
+
+  <div class="step">
+
+<div class="num">💬</div>
+
+<h3>Atención 24/7</h3>
+
+<p>
+CARENT puede ayudarte a consultar disponibilidad,
+conocer la flotilla y solicitar una cotización inicial
+las 24 horas del día.
+</p>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+  
+  <!-- ========================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================= -->
+
+  <footer>
+  <p>
+    🚗 <strong>RENTA AUTO LA PEÑITA DE JALTEMBA</strong>
+  </p>
+
+  <p>
+    📍 Calle 16 de Septiembre #1<br>
+    La Peñita de Jaltemba<br>
+    Compostela, Nayarit<br>
+    C.P. 63720
+  </p>
+
+  <p>
+    📲 WhatsApp de reservaciones:
+    <strong>322 140 0187</strong>
+  </p>
+
+  <p>
+    🤖 CARENT es nuestro asistente virtual para consultas de disponibilidad,
+    cotizaciones y reservaciones.
+  </p>
+
+  <p>
+    🌐 Sitio web oficial:
+    <a href="https://renta-auto-la-penita-de-jaltemba-nay.github.io/"
+       target="_blank">
+       renta-auto-la-penita-de-jaltemba-nay.github.io
+    </a>
+  </p>
+
+  <p>
+    📘 Facebook oficial:
+    <a href="https://www.facebook.com/renta1auto1/"
+       target="_blank">
+       RENTA AUTO LA PEÑITA DE JALTEMBA
+    </a>
+  </p>
+
+  </footer>
+
+  <!-- ========================================= -->
+  <!-- BOTPRESS -->
+  <!-- ========================================= -->
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+
+  <script src="https://files.bpcontent.cloud/2025/05/29/03/20250529033022-NJ8W71H5.js" defer></script>
+
+  <script>
+
+    function abrirChatBotpress() {
+
+      const start = Date.now();
+
+      const intentarAbrir = () => {
+
+        if (window.botpress && typeof window.botpress.open === 'function') {
+          window.botpress.open();
+          return true;
+        }
+
+        if (window.botpress && typeof window.botpress.toggle === 'function') {
+          window.botpress.toggle();
+          return true;
+        }
+
+        if (window.botpressWebChat && typeof window.botpressWebChat.sendEvent === 'function') {
+          window.botpressWebChat.sendEvent({ type: 'toggle' });
+          return true;
+        }
+
+        return false;
+      };
+
+      if (intentarAbrir()) return;
+
+      const t = setInterval(() => {
+
+        if (intentarAbrir() || (Date.now() - start > 12000)) {
+          clearInterval(t);
+        }
+
+      }, 250);
+
+    }
+
+  </script>
+
+</body>
+</html>
